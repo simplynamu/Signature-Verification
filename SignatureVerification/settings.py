@@ -22,10 +22,7 @@ SECRET_KEY = '_vxe1@q(n^(9i42n4m&pnd=6rh_o!y25p5a!!mqklks$8xi()8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '127.0.0.1',
-    'localhost',
-    '.versel.app']
+ALLOWED_HOSTS = ['.versel.app', '.now.sh', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -53,14 +50,17 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'SignatureVerification.urls'
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-PROJECT_PATH = os.path.abspath((os.path.dirname(__name__)))
 STATICFILES_DIRS = [
-    os.path.join(PROJECT_PATH, 'static')
+    os.path.join(BASE_DIR, 'static')
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+PROJECT_PATH = os.path.abspath((os.path.dirname(__name__)))
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media').replace('\\', '/')
+
+
 
 TEMPLATES = [
     {

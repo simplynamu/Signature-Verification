@@ -42,6 +42,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -49,6 +50,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'SignatureVerification.urls'
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 PROJECT_PATH = os.path.abspath((os.path.dirname(__name__)))
 STATICFILES_DIRS = [
     os.path.join(PROJECT_PATH, 'static')

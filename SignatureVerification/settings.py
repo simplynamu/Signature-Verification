@@ -22,7 +22,10 @@ SECRET_KEY = '_vxe1@q(n^(9i42n4m&pnd=6rh_o!y25p5a!!mqklks$8xi()8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.versel.app']
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    '.versel.app']
 
 
 # Application definition

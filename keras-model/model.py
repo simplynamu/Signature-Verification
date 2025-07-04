@@ -50,7 +50,7 @@ m = layers.Dense(1, activation = "sigmoid")(myo)
 model = models.Model(inputs = [X1, X2], outputs = m)
 
 
-model.compile(loss = "binary_crossentropy", optimizer = 'adam' , metrics = ['accuracy'])
+model.compile(loss = "binary_crossentropy", optimizer = 'adam', metrics = ['accuracy'])
 model.summary()
 
 path_to_dataset = os.getcwd() + "\\dataset"

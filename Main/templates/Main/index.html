@@ -13,19 +13,15 @@
 
 <body>
 <div class="bg"></div>
-<!-- <div style="position:fixed; top: 7%; width: 100%" align="center"><img style="height: 70px" src="{% static 'logo.png' %}"/></div> -->
+<div style="position:fixed; top: 7%; width: 100%" align="center"><img style="height: 70px" src="{% static 'logo.png' %}"/></div>
 <div class="tfbox card outer">
 	
 		<ul class="nav nav-tabs" id="myTab" role="tablist">
 			<li class="nav-item">
 				<a class="nav-link active" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="true">Register</a>
 			</li>
-			<li class="nav-item" style=" border-right-width: 0px;
-      /* padding-right: 6rem;
-      padding-bottom: 0.5rem; */
-      padding-left: 10rem;
-      margin-top:0px;">
-				<a class="nav-link"  style  = "padding-left: 150px; margin-left: auto;" id="verify-tab" data-toggle="tab" href="#verify" role="tab" aria-controls="verify" aria-selected="false">Verify</a>
+			<li class="nav-item-2">
+				<a class="nav-link" id="verify-tab" data-toggle="tab" href="#verify" role="tab" aria-controls="verify" aria-selected="false">Verify</a>
 			</li>
 
 
@@ -41,7 +37,6 @@
 				{% if reg_code == True %}
           {% if form.errors == False %}
 				<p class="h4 mb-4">Registration successful</p>
-        
 				  {% endif %}
         {% endif %}
 			</form>

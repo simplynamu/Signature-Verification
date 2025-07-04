@@ -13,7 +13,7 @@
 
 <body>
 <div class="bg"></div>
-{% comment %} <div style="position:fixed; top: 7%; width: 100%" align="center"><img style="height: 70px" src="{% static 'logo.png' %}"/></div> {% endcomment %}
+<div style="position:fixed; top: 7%; width: 100%" align="center"><img style="height: 70px" src="{% static 'logo.png' %}"/></div>
 <div class="tfbox card outer">
 
 		<div class="tab-content" id="myTabContent">
@@ -21,7 +21,7 @@
 
 			<div style="position:absolute; text-align: center; width:100%; align: center; top: 40%" class="tab-pane fade show active" id="register" role="tabpanel" aria-labelledby="register-tab">
 
-                <p style="width: 100% ; display: block;" class="h4 mb-4">Prediction:<br>
+                <p style="width: 100% ;display: block;" class="h4 mb-4">Prediction:<br>
                 {% for i in answers %}
                     {{ i }}
                     <br>
